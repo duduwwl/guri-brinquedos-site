@@ -221,3 +221,17 @@ img{max-width:100%}
   .hero-photo img{height:230px!important}
   .product-image{height:160px}
 }
+
+/* mobile bag control: center the emoji and keep the counter inside the frame */
+.bag-btn{display:inline-grid;place-items:center;line-height:1;padding:0;font-family:"Segoe UI Emoji","Apple Color Emoji",sans-serif}
+@media(max-width:680px){
+  .nav-actions .bag-btn[data-cart-link],.nav-actions .menu{width:38px;min-width:38px;height:38px;border-radius:12px;display:grid;place-items:center;line-height:1;padding:0}
+  .nav-actions .bag-btn[data-cart-link]{font-size:20px}
+  .nav-actions .menu{font-size:22px}
+  .nav-actions .bag-count{right:-4px;top:-6px;min-width:17px;height:17px;font-size:9px;line-height:1}
+}
+@media(max-width:360px){
+  .nav-actions .bag-btn[data-cart-link],.nav-actions .menu{width:35px;min-width:35px;height:35px;border-radius:11px}
+  .nav-actions .bag-btn[data-cart-link]{font-size:18px}
+  .nav-actions .menu{font-size:20px}
+}
